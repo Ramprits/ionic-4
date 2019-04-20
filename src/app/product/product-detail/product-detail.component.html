@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/product"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ product?.name }}
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onDelete(product?._id)">
+        <ion-icon name="trash" slot="end"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-img
+    src="http://localhost:1337/uploads/a09a18b677ab4a1db19f6c2c06e945c6.jpeg"
+    alt=""
+  ></ion-img>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>{{ product?.price }}</ion-title>
+  </ion-toolbar>
+</ion-footer>
