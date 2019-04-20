@@ -42,9 +42,7 @@ export class ProductDetailComponent implements OnInit {
           {
             text: 'Delete',
             handler: () => {
-              this._ps
-                .deleteProduct(id)
-                .subscribe(data => console.log('Deleted sucessfully'));
+              this._ps.deleteProduct(id);
               this._route.navigate(['/product']);
             }
           }
