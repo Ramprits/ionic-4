@@ -1,0 +1,6 @@
+{
+  "appId": "com.rameshapp.ionic-angular",
+  "appName": "resturentApp",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

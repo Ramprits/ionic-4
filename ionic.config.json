@@ -1,6 +1,8 @@
 {
   "name": "resturentApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular",
   "id": "a2826ede"
 }
