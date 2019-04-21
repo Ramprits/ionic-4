@@ -8,6 +8,7 @@ import { Product } from '../product.model';
 })
 export class ProductItemComponent implements OnInit {
   @Input() productItem: Product;
+  serverUrl = 'http://localhost:1337';
 
   constructor() {}
 
