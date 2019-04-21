@@ -15,13 +15,5 @@
 </ion-header>
 
 <ion-content no-padding>
-  <ion-img
-    src="http://localhost:1337/uploads/a09a18b677ab4a1db19f6c2c06e945c6.jpeg"
-    alt=""
-  ></ion-img>
+  <app-product-item [productItem]="product"></app-product-item>
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>{{ product?.price }}</ion-title>
-  </ion-toolbar>
-</ion-footer>

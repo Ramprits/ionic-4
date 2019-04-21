@@ -1,6 +1,15 @@
-<ion-item [routerLink]="['/product', productItem._id]">
-  <ion-avatar slot="start">
-    <img [src]="serverUrl + productItem.image.url" />
-  </ion-avatar>
-  <ion-label style="margin-left:20px"> {{ productItem.name }} </ion-label>
+<ion-item [routerLink]="['/product', productItem._id]" class="ion-item">
+  <ion-card class="welcome-card" >
+    <ion-img [src]="serverUrl + productItem.image.url"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon ios="logo-usd" md="logo-usd"></ion-icon>
+        {{ productItem.price }}</ion-card-subtitle
+      >
+      <ion-card-title>{{ productItem.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p [innerHTML]="productItem.description.substr(0, 200)"></p>
+    </ion-card-content>
+  </ion-card>
 </ion-item>
