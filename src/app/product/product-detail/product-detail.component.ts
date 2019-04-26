@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
@@ -7,11 +7,13 @@ import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-product-detail',
-  templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.scss']
+  templateUrl: './product-detail.component.html'
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnChanges {
   product: Product;
+  ngOnChanges(): void {
+    console.log('OnChange called');
+  }
   constructor(
     private _activateRoute: ActivatedRoute,
     private _ps: ProductService,

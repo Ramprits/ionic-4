@@ -20,6 +20,7 @@ export class ProductPage implements OnInit, OnDestroy {
       .getProductUpdateListener()
       .subscribe((product: Product[]) => {
         this.products = product;
+        console.log('products=>>>', this.products);
       });
   }
 
